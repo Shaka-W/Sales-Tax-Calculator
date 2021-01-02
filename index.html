@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tax Calculator</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1 class="title">Sales Tax Calculator</h1>
+    </header>
+    <form action="#">
+        <div class="form-control">
+            <label for="amount">Before Tax Price</label>
+            <input type="number" name="amount" id="amount" min="0">
+        </div>
+        <div class="form-control">
+            <label for="sales-tax">Sales Tax Rate</label>
+            <input type="number" name="sales-tax" id="sales-tax" min="0" step="0.01">
+        </div>
+        <p class="output"></p>
+        <input type="submit" value="Calculate" class="btn btn-calculate">
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
